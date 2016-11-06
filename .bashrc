@@ -56,11 +56,11 @@ mountset(){
 #}
 #mount usb
 function mountusb(){
-	DIRECTORY="/home/osama/mnt"
+	DIRECTORY="/home/tripleheader/mnt"
 	if [ ! -d "$DIRECTORY" ]; then
 		mkdir "$DIRECTORY"
 	fi
-	sudo mount $1 "$DIRECTORY"
+	sudo mount -t vfat $1 "$DIRECTORY" -o uid=1000,gid=1000,utf8,dmask=027,fmask=137
        echo "Donnee. Mounted at $DIRECTORY"	
 		
 }
@@ -106,7 +106,8 @@ alias off-display='xrandr --output eDP-1 --off'
 alias revert-display='xrandr --output eDP-1 --mode 1366x768'
 alias off-display2='xrandr --output HDMI-1 --off'
 alias playmusic='mpv /home/osama/music/rockstart/* --no-audio-display'
-alias android-studio='/home/tripleheader/Android/android-studio/bin/studio.sh'
+alias android-studio='/home/tripleheader/Android/android-studio/bin/studio.sh &'
+
 ####################################################################################
 ##################            M I S C E L L A N E O U S          ###################
 ####################################################################################
