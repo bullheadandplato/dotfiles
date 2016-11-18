@@ -22,22 +22,22 @@ setvolume(){
 #let the ide functions begin
 webstorm(){
 	# run the license server before proceeding
-	$HOME/.idea-server -u osama -p 5001 &
+	sudo /home/tripleheader/.idea-server &
 	sh $HOME/ides/web*/bin/webstorm.sh &
 }
 idea(){
 	# run the license server before proceeding
-	$HOME/.idea-server -u osama -p 5001 &
+	sudo /home/tripleheader/.idea-server  &
 	sh $HOME/ides/idea/bin/idea.sh &
 }
 pycharm(){
 	# run the license server before proceeding
-	$HOME/.idea-server -u osama -p 5001 &
+	sudo /home/tripleheader/.idea-server &
 	sh $HOME/ides/pycharm*/bin/pycharm.sh &
 }
 phpstorm(){
 	# run the license server before proceeding
-	$HOME/.idea-server -u tripleheader -p 5001 &
+	sudo /home/tripleheader/.idea-server &
 	sh $HOME/ides/php*/bin/phpstorm.sh &
 }
 
