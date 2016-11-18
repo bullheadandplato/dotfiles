@@ -20,25 +20,24 @@ setvolume(){
 	echo "Volume set to level: "$1
 }
 #let the ide functions begin
-webstorm(){
-	# run the license server before proceeding
-	sudo /home/tripleheader/.idea-server &
+webstorm(){ 
 	sh $HOME/ides/web*/bin/webstorm.sh &
+	sudo /home/tripleheader/.idea-server
 }
 idea(){
-	# run the license server before proceeding
-	sudo /home/tripleheader/.idea-server  &
+
 	sh $HOME/ides/idea/bin/idea.sh &
+	sudo /home/tripleheader/.idea-server
 }
 pycharm(){
-	# run the license server before proceeding
-	sudo /home/tripleheader/.idea-server &
+
 	sh $HOME/ides/pycharm*/bin/pycharm.sh &
+	sudo /home/tripleheader/.idea-server
 }
 phpstorm(){
-	# run the license server before proceeding
-	sudo /home/tripleheader/.idea-server &
+ 
 	sh $HOME/ides/php*/bin/phpstorm.sh &
+	sudo /home/tripleheader/.idea-server
 }
 
 
