@@ -52,7 +52,7 @@ fi
 #xclock -geometry 50x50-1+1 &
 #xterm -geometry 80x50+494+51 &
 #xterm -geometry 80x20+494-0 &
-feh --bg-scale /home/osama/pictures/back.png &
+exec /home/tripleheader/.scripts/wallpaperchange.sh &
 LAT=32.129921
 LON=73.626800
 redshift -l $LAT:$LON &

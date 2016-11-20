@@ -112,7 +112,8 @@ alias android-studio='/home/tripleheader/Android/android-studio/bin/studio.sh &'
 ####################################################################################
 
 #add path
-PATH="$PATH:/home/osama/Android/android-sdk/tools"
+PATH="$PATH:/home/tripleheader/Android/android-sdk/tools"
+PATH="$PATH:/home/tripleheader/.scripts/"
 #set java home
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 PATH=$JAVA_HOME/bin:$PATH
