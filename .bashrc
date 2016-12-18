@@ -106,6 +106,7 @@ alias revert-display='xrandr --output eDP-1 --mode 1366x768'
 alias off-display2='xrandr --output HDMI-1 --off'
 alias playmusic='mpv /home/osama/music/rockstart/* --no-audio-display'
 alias android-studio='/home/tripleheader/Android/android-studio/bin/studio.sh &'
+alias netcon='sudo systemctl start netctl@wifib'
 
 ####################################################################################
 ##################            M I S C E L L A N E O U S          ###################
