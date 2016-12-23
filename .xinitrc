@@ -58,4 +58,4 @@ LON=73.626800
 redshift -l $LAT:$LON &
 #exec $HOME/.idea-server -u osama -p 5001 &
 exec i3
-
+#exec gnome-session

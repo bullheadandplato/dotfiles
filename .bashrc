@@ -107,7 +107,7 @@ alias off-display2='xrandr --output HDMI-1 --off'
 alias playmusic='mpv /home/osama/music/rockstart/* --no-audio-display'
 alias android-studio='/home/tripleheader/Android/android-studio/bin/studio.sh &'
 alias netcon='sudo systemctl start netctl@wifib'
-
+alias qt='/home/tripleheader/.Qt5.6.2/Tools/QtCreator/bin/qtcreator &'
 ####################################################################################
 ##################            M I S C E L L A N E O U S          ###################
 ####################################################################################
