@@ -70,7 +70,7 @@ untar(){
 ####################################################################################
 #########        I N T E R F A C E    S T U F F aka bash prompot         ###########
 ####################################################################################
-
+export PS1="\[$(tput setaf 5)\]\[$(tput bold)\]\h \W >> \[$(tput sgr0)\]"
 #REDCOLOR='\e[3#1m'
 #BATCOLOR='\e[3#3m'
 #GREENCOLOR='\e[3#2m'
@@ -108,6 +108,8 @@ alias playmusic='mpv /home/osama/music/rockstart/* --no-audio-display'
 alias android-studio='/home/tripleheader/Android/android-studio/bin/studio.sh &'
 alias netcon='sudo systemctl start netctl@wifib'
 alias qt='/home/tripleheader/.Qt5.6.2/Tools/QtCreator/bin/qtcreator &'
+alias webmode='sudo systemctl start httpd && sudo systemctl start mariadb'
+
 ####################################################################################
 ##################            M I S C E L L A N E O U S          ###################
 ####################################################################################
@@ -120,3 +122,6 @@ export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 PATH=$JAVA_HOME/bin:$PATH
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+#if [[ -r /usr/lib/python3.5/site-packages/powerline/bindings/bash/powerline.sh ]]; then
+#	    source /usr/lib/python3.5/site-packages/powerline/bindings/bash/powerline.sh
+ #   fi
