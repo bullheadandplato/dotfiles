@@ -24,21 +24,21 @@ weather="$(echo "$SITE" | awk -F\' '/acm_RecentLocationsCarousel\.push/{print $1
 temp="$(echo "$SITE" | awk -F\' '/acm_RecentLocationsCarousel\.push/{print $12 }'| head -1)"
 
 if [[ $weather == *thunder* || $weather == *Thunder* ]]; then
-    icon=;
+    icon=  ;
 else
     if [[ $weather == *rain* || $weather == *Rain* ]]; then
-        icon= ;
+        icon=   ;
     else
         if [[ $weather == *cloud* || $weather == *Cloud* ]]; then
-            icon= ;
+            icon=  ;
         else
-            icon=;
+            icon=  ;
         fi
     fi
 fi
 
-full="$icon $temp C"
-short="$temp?"
+full="  $icon $temp C  "
+short="  $temp?  "
 
 echo $full
 exit $status
