@@ -1,0 +1,6 @@
+addons.make
+config.make
+mySketch.qbs
+src/main.cpp
+src/ofApp.cpp
+src/ofApp.h
