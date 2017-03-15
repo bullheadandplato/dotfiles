@@ -9,8 +9,8 @@ html {
 			    width: 100%;
 			        height: 100%;
 				    margin: 0;
-				        background-color: #222222;
-					    color: #bbbbbb;
+				        background-color: #212121;
+					    color: #F44336;
 				    }
 
 				    .container {
@@ -43,7 +43,7 @@ html {
 												        margin: auto;
 													    padding: 0;
 													        background-color: rgba(0, 0, 0, 0);
-														    color: #bbbbbb;
+														    color: #2196F3;
 														        border: none;
 														}
 
@@ -64,7 +64,7 @@ html {
 																	    }
 
 																	    ul > li > a {
-																		        color: #bbbbbb;
+																		        color: #2196F3;
 																			    outline: none;
 
 																			        display: block;
@@ -74,7 +74,7 @@ html {
 																				    }
 
 																				    ul > li > a:hover {
-																					        color: #222222;
+																					        color: #0D47A1;
 																						    background-color: #bbbbbb;
 																					    }
 
@@ -92,8 +92,9 @@ html {
 																								    }
 																								    .label{
 																									        font-size: 1.5em;
+font-weight: bold;
 																										    line-height: 1.5em;
-																										        color: whitesmoke;
+																										        color: #F44336;
 																											    width: 100%;
 																											        height: 100%;
 																												    border: none;
@@ -101,5 +102,6 @@ html {
 																												}
 																												.fig{
 																													    margin-top: 10%;
-																													        color: antiquewhite;
+																													        color: #F44336;
+font-weight: bold;
 																													}
