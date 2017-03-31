@@ -52,11 +52,7 @@ fi
 #xclock -geometry 50x50-1+1 &
 #xterm -geometry 80x50+494+51 &
 #xterm -geometry 80x20+494-0 &
-<<<<<<< HEAD
 exec $HOME/.scripts/wallpaperchange.sh &
-=======
-exec /home/tripleheader/.scripts/wallpaperchange.sh &
->>>>>>> 15645536d3ea3657e85d82eb84d4683f7121ef77
 LAT=32.129921
 LON=73.626800
 redshift -l $LAT:$LON &

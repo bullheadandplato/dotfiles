@@ -93,59 +93,42 @@ alias azit='exit'
 alias clr='clear'
 alias rngr='ranger'
 alias back='cd -'
-<<<<<<< HEAD
 alias copy='rsync -r -v --progress'
 alias emulator='$HOME/Android/Sdk/tools/emulator -avd nexus -no-boot-anim -show-kernel -verbose '
 alias hotspot='sudo create_ap wlp8s0 ppp0 tripleheader Mangoin4323' # no one near me gonna read this so I don't need to hide my pass
 alias unmount='sudo umount ~/mnt'
-alias bot='sudo $HOME/.irc-bot/src/ircbot.py'
-=======
-alias cdset='cd /media/osama/Set'
 alias copy='rsync -r -v --progress'
-alias emulator='/home/tripleheader/Android/Sdk/tools/emulator -avd nexus -no-boot-anim -show-kernel -verbose '
+alias emulator='$HOME/Android/Sdk/tools/emulator -avd nexus -no-boot-anim -show-kernel -verbose '
 alias hotspot='sudo create_ap wlp8s0 ppp0 tripleheader Mangoin4323' # no when near me gonna read this so I don't need to hide my pass
 alias unmount='sudo umount ~/mnt'
-alias bot='sudo /home/osama/.irc-bot/src/ircbot.py'
->>>>>>> 15645536d3ea3657e85d82eb84d4683f7121ef77
 alias split-display='xrandr --output HDMI-1 --mode 1920x1200 --right-of eDP-1'
 alias clone-display='xrandr --output HDMI-1 --same-as eDP-1'
 alias off-display='xrandr --output eDP-1 --off'
 alias revert-display='xrandr --output eDP-1 --mode 1366x768'
 alias off-display2='xrandr --output HDMI-1 --off'
-<<<<<<< HEAD
-alias playmusic='mpv $HOME/data/music/* --no-audio-display'
 alias android-studio='$HOME/Android/android-studio/bin/studio.sh &'
 alias netcon='sudo systemctl start netctl@wifib'
 alias qt='$HOME/.Qt5.6.2/Tools/QtCreator/bin/qtcreator &'
 alias webmode='sudo systemctl start httpd && sudo systemctl start mariadb'
 alias mntdata='sudo cryptsetup luksOpen /dev/sda3 data && sudo mount /dev/mapper/data /home/bullhead/data && echo "Sucessfully mounted."'
-=======
-alias playmusic='mpv /home/osama/music/rockstart/* --no-audio-display'
-alias android-studio='/home/tripleheader/Android/android-studio/bin/studio.sh &'
+alias playmusic='mpv $HOME/data/music/*  --no-audio-display'
+alias android-studio='$HOME/Android/android-studio/bin/studio.sh &'
 alias netcon='sudo systemctl start netctl@wifib'
-alias qt='/home/tripleheader/.Qt5.6.2/Tools/QtCreator/bin/qtcreator &'
 alias webmode='sudo systemctl start httpd && sudo systemctl start mariadb'
->>>>>>> 15645536d3ea3657e85d82eb84d4683f7121ef77
+alias fixit='sudo rm -f /var/lib/pacman/db.lck && sudo pacman-mirrors -g && sudo pacman -Syyuu  &&
+sudo pacman -Suu'
+
 
 ####################################################################################
 ##################            M I S C E L L A N E O U S          ###################
 ####################################################################################
 
 #add path
-PATH="$PATH:/home/tripleheader/Android/android-sdk/tools"
-PATH="$PATH:/home/tripleheader/.scripts/"
+PATH="$PATH:$HOME/Android/android-sdk/tools"
+PATH="$PATH:$HOME/.scripts/"
 #set java home
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 PATH=$JAVA_HOME/bin:$PATH
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-PG_OF_PATH="/opt/openFrameworks/"
-#if [[ -r /usr/lib/python3.5/site-packages/powerline/bindings/bash/powerline.sh ]]; then
-#	    source /usr/lib/python3.5/site-packages/powerline/bindings/bash/powerline.sh
- #   fi
- alias fixit='sudo rm -f /var/lib/pacman/db.lck && sudo pacman-mirrors -g && sudo pacman -Syyuu  &&
-sudo pacman -Suu'
-
 BROWSER=/usr/bin/xdg-open
 
 
