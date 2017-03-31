@@ -117,7 +117,8 @@ alias netcon='sudo systemctl start netctl@wifib'
 alias webmode='sudo systemctl start httpd && sudo systemctl start mariadb'
 alias fixit='sudo rm -f /var/lib/pacman/db.lck && sudo pacman-mirrors -g && sudo pacman -Syyuu  &&
 sudo pacman -Suu'
-
+alias rex='xrdb ~/.Xresources'
+alias nasheeds='mpv $HOME/data/nasheeds/* --no-audio-display'
 
 ####################################################################################
 ##################            M I S C E L L A N E O U S          ###################

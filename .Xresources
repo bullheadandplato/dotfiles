@@ -8,7 +8,7 @@
 
 URxvt.depth:                32
 URxvt.geometry:             90x30
-URxvt.transparent:          false
+URxvt.transparent:          true
 URxvt.shading:		    10
 URXvt.opacity:		    40	
 URxvt.fading:               20
