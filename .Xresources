@@ -9,9 +9,11 @@
 URxvt.depth:                32
 URxvt.geometry:             90x30
 URxvt.transparent:          true
-URxvt.shading:		    10
-URXvt.opacity:		    40	
+URxvt.shading:		    20
+URXvt.opacity:		    20	
 URxvt.fading:               20
+URxvt.blurRadius:           5
+
 ! URxvt.urgentOnBell:         true
 ! URxvt.visualBell:           true
 URxvt.loginShell:           true
