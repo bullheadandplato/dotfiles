@@ -245,10 +245,10 @@ bar {
         separator          #FFEB3B
 
 #                          BORDER       BACKGROUND   TEXT
-        focused_workspace  $blue        $black       $darkwhite
+        focused_workspace  $blue        $black       #4caf50
         inactive_workspace $black       $black       #AAAAAA
-        active_workspace   $transparent $black       $white
-        urgent_workspace   $darkred     $darkred     $transparent
+        active_workspace   $transparent $black       #white
+        urgent_workspace   $darkred     $darkred     #2196f3
         binding_mode       $darkred     $darkred     #FFFFFF
     }
 }
