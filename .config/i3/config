@@ -25,11 +25,11 @@ set $transparent #00000000
 set $height 24
 
 set $ws1  "1:  "
-set $ws2  "2:  "
-set $ws3  "3:  "
-set $ws4  "4:  "
-set $ws5  "5:  "
-set $ws6  "6:  "
+set $ws2  "2:   "
+set $ws3  "3:   "
+set $ws4  "4:  "
+set $ws5  "5:   "
+set $ws6  "6:  "
 set $ws7  "7:  "
 set $ws8  "8:  "
 set $ws9  "9:  "
@@ -114,7 +114,7 @@ bindsym $mod+Shift+plus scratchpad show
 
 bindsym $mod+Shift+s sticky toggle
 # put YouTube into fullscreen and execute this for media mode
-bindsym $mod+y fullscreen disable; floating enable; resize set 600 400; sticky enable; move window to position 1940 54
+bindsym $mod+y fullscreen disable; floating enable; resize set 400 200; sticky enable; move window to position 1520 1000
 
 bindsym $mod+Shift+1 move container to workspace number $ws1
 bindsym $mod+Shift+2 move container to workspace number $ws2
@@ -130,7 +130,8 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+q kill
-bindsym $mod+l exec /home/bullhead/.config/i3/lock.sh
+bindsym $mod+l exec i3lock-fancy -p
+
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
@@ -225,8 +226,8 @@ for_window [class="(?i)pavucontrol"] floating enable, move position mouse
 for_window [class="(?i)pavucontrol" instance="pavucontrol-bar"] move down $height px
 
 assign [class="(?i)chromium"]                       $ws1
-assign [class="(?i)android" window_type="splash"] $ws5
-assign [class="(?i)android" window_type="normal"] $ws5
+assign [class="(?i)jetbrains-stduio" window_type="splash"] $ws2
+assign [class="(?i)jetbrains-studio" window_type="normal"] $ws2
 assign [class="(?i)thunderbird"]                  $ws9
 
 bar {
@@ -245,7 +246,7 @@ bar {
         separator          #FFEB3B
 
 #                          BORDER       BACKGROUND   TEXT
-        focused_workspace  $blue        $black       #4caf50
+        focused_workspace  #212121        $black       #4caf50
         inactive_workspace $black       $black       #AAAAAA
         active_workspace   $transparent $black       #white
         urgent_workspace   $darkred     $darkred     #2196f3
