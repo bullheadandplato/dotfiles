@@ -42,8 +42,8 @@ gaps outer $default_gaps_outer
 
 workspace $ws1 gaps inner 0
 workspace $ws1 gaps outer 0
-workspace $ws5 gaps inner 0
-workspace $ws5 gaps outer 0
+workspace $ws2 gaps inner 0
+workspace $ws2 gaps outer 0
 workspace $ws10 gaps inner 0
 workspace $ws10 gaps outer 0
 
@@ -115,7 +115,8 @@ bindsym $mod+Shift+plus scratchpad show
 bindsym $mod+Shift+s sticky toggle
 # put YouTube into fullscreen and execute this for media mode
 bindsym $mod+y fullscreen disable; floating enable; resize set 400 200; sticky enable; move window to position 1520 1000
-
+bindsym $mod+t floating enable; resize set 400 200; sticky enable; move window to position 0 1000
+ 
 bindsym $mod+Shift+1 move container to workspace number $ws1
 bindsym $mod+Shift+2 move container to workspace number $ws2
 bindsym $mod+Shift+3 move container to workspace number $ws3
