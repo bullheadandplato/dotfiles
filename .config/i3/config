@@ -137,8 +137,8 @@ bindsym $mod+l exec i3lock-fancy -p
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # screenshot
-bindsym --release Print exec --no-startup-id "maim -p 0 -c 0.96,0.5,0.09 $HOME/Pictures/screenshot-$(date +%Y-%m-%d_%H-%M-%S).png"
-bindsym --release Shift+Print exec --no-startup-id "maim -s -p 0 -c 0.96,0.5,0.09 $HOME/Pictures/screenshot-$(date +%Y-%m-%d_%H-%M-%S).png"
+bindsym $mod+Print exec --no-startup-id "maim -p 0 -c 0.96,0.5,0.09 $HOME/screenshot-$(date +%Y-%m-%d_%H-%M-%S).png"
+bindsym --release Shift+Print exec --no-startup-id "maim -s -p 0 -c 0.96,0.5,0.09 $HOME/screenshot-$(date +%Y-%m-%d_%H-%M-%S).png"
 
 set $mode_power power
 bindsym Mod1+Control+l mode "$mode_power"
@@ -243,13 +243,13 @@ bar {
     height $height
     colors {
         statusline         #FFFFFF
-        background         #222222
+        background         $transparent
         separator          #FFEB3B
 
 #                          BORDER       BACKGROUND   TEXT
         focused_workspace  #212121        $black       #4caf50
         inactive_workspace $black       $black       #AAAAAA
-        active_workspace   $transparent $black       #white
+        active_workspace   $transparent $transparent       #white
         urgent_workspace   $darkred     $darkred     #2196f3
         binding_mode       $darkred     $darkred     #FFFFFF
     }
