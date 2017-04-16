@@ -1,9 +1,9 @@
 ( if
 ( or
-( contains ( application_name ) "Nautilus" )
+( contains ( application_name ) "nautilus" )
 ( contains ( application_name )  "i3bar"   )
 )
 ( begin
-( spawn_async (str "transset-df -i " (window_xid) " 0.90" ))
+( spawn_async (str "transset-df -i " (window_xid) " 0.75" ))
 )
 )
