@@ -234,7 +234,7 @@ assign [class="(?i)thunderbird"]                  $ws9
 bar {
     verbose yes
     status_command i3blocks -c ~/.config/i3/i3blocks.conf
-    i3bar_command i3bar -t
+    i3bar_command i3bar
     position top
     font pango:Hack, FontAwesome 11
     strip_workspace_numbers yes
