@@ -22,24 +22,22 @@ setvolume(){
 #let the ide functions begin
 webstorm(){ 
 	sh $HOME/ides/web*/bin/webstorm.sh &
-	sudo /home/tripleheader/.idea-server
 }
 idea(){
 
 	sh $HOME/ides/idea/bin/idea.sh &
-	sudo /home/tripleheader/.idea-server
 }
 pycharm(){
 
 	sh $HOME/ides/pycharm*/bin/pycharm.sh &
-	sudo /home/tripleheader/.idea-server
 }
 phpstorm(){
  
 	sh $HOME/ides/php*/bin/phpstorm.sh &
-	sudo /home/tripleheader/.idea-server
 }
-
+datagrip(){
+	sh $HOME/ides/datagrip/bin/datagrip.sh &
+}
 
 # mount the second partition
 mountset(){
@@ -186,3 +184,4 @@ ALT_PURPLE_BG=$(__bg_color 13)
 ALT_CYAN_BG=$(__bg_color 14)
 ALT_WHITE_BG=$(__bg_color 15)
 
+export GPG_TTY=$(tty)
